@@ -1,0 +1,7 @@
+@import '../base/vars';
+@import '../base/fonts';
+.menu_btn {
+	@media (min-width: 768px) {
+		display: block;
+	}
+}

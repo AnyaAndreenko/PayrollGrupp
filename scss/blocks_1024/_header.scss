@@ -1,0 +1,14 @@
+@import '../base/vars';
+@import '../base/fonts';
+.menu_list,
+a,
+ul {
+	@media (min-width: 768px) {
+		display: inline-block;
+		font-family: $font-main;
+		font-weight: 600;
+		color: $header-color;
+		font-size: 13px;
+		padding: 5px;
+	}
+}

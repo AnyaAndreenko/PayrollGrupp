@@ -1,0 +1,12 @@
+@import '../base/vars';
+@import '../base/fonts';
+@media (min-width: 640px) {
+	.header {
+		&_inner {
+			min-width: 30px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+}

@@ -1,0 +1,9 @@
+@import '../base/vars';
+@import '../base/fonts';
+
+.head {
+	background-color: $bg-color;
+	padding: 100%;
+}
+@media (min-width: 320px) {
+}
