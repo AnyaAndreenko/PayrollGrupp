@@ -1,0 +1,50 @@
+@import '../base/reset';
+@import '../base/vars';
+
+.payroll {
+	margin-bottom: 10px;
+}
+.text-payroll {
+	padding: 10px;
+	&_main {
+		color: $accent;
+		font-family: $font-main;
+		font-weight: 600;
+		font-size: 30px;
+	}
+	&_under {
+		margin-top: 10px;
+		color: $header-color;
+		font-family: $font-main;
+		font-weight: 400;
+		font-size: 13px;
+	}
+}
+// список услуг
+.includ {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+.includ_text {
+	margin-top: 10px;
+	color: $header-color;
+	font-family: $font-main;
+	font-weight: 400;
+	font-size: 13px;
+
+	&_num {
+		color: rgba(99, 121, 201, 0.4);
+		font-family: $font-main;
+		font-size: 24px;
+		font-weight: 700;
+	}
+}
+ol li {
+	list-style-type: none;
+	padding-left: 15px;
+	text-align: left;
+	margin: 20px 20px 20px 20px;
+	::before {
+		content: none;
+	}
+}

@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap");
 * {
   padding: 0px;
   margin: 0px;
@@ -46,6 +47,7 @@ h4,
 h5,
 h6,
 p {
+  margin: 0;
   font-size: inherit;
   font-weight: inherit;
 }
@@ -153,6 +155,7 @@ h4,
 h5,
 h6,
 p {
+  margin: 0;
   font-size: inherit;
   font-weight: inherit;
 }
@@ -218,11 +221,6 @@ label {
 
 legend {
   display: block;
-}
-
-.head {
-  background-color: #eff6fe;
-  padding: 100%;
 }
 
 html {
@@ -311,9 +309,519 @@ body {
   }
 }
 
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
 .head {
   background-color: #eff6fe;
-  padding: 100%;
+  background-image: url("../../img/svg/bg-figur.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+
+.left-main-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.top-slider_item {
+  padding: 20px;
+}
+.top-slider_item_font {
+  color: #6379c9;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.top-slider_item_under {
+  margin-top: 10px;
+  color: #7883ab;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.pay_btn {
+  margin: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6379c9;
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+  box-shadow: 0px 7px 15px 0px rgba(76, 100, 188, 0.5);
+}
+
+.pay_btn_text {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.add-pay1_btn {
+  margin-left: 6px;
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 4px rgba(99, 121, 201, 0.2);
+  width: 123px;
+  height: 50px;
+}
+
+.for-icon_text {
+  color: #6379c9;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.add-pay2_btn {
+  margin-left: 6px;
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 4px rgba(99, 121, 201, 0.2);
+  width: 123px;
+  height: 50px;
+}
+
+.add-pay3_btn {
+  margin-right: 6px;
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 4px rgba(99, 121, 201, 0.2);
+  width: 100px;
+  height: 50px;
+}
+
+.add-pay {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.content {
+  background-image: url("../../img/svg/bg-content-figur.svg");
+  background-repeat: no-repeat;
+}
+
+.text-main {
+  padding: 10px;
+}
+.text-main_main {
+  color: #6379c9;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.text-main_under {
+  margin-top: 10px;
+  color: #3e486a;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.application_btn {
+  margin: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6379c9;
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+  box-shadow: 0px 7px 15px 0px rgba(76, 100, 188, 0.5);
+}
+
+.application_btn_text {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a,
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul,
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button,
+input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.payroll {
+  margin-bottom: 10px;
+}
+
+.text-payroll {
+  padding: 10px;
+}
+.text-payroll_main {
+  color: #6379c9;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.text-payroll_under {
+  margin-top: 10px;
+  color: #3e486a;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.includ {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.includ_text {
+  margin-top: 10px;
+  color: #3e486a;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+.includ_text_num {
+  color: rgba(99, 121, 201, 0.4);
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+ol li {
+  list-style-type: none;
+  padding-left: 15px;
+  text-align: left;
+  margin: 20px 20px 20px 20px;
+}
+ol li ::before {
+  content: none;
 }
 
 @media (min-width: 640px) {
@@ -383,6 +891,7 @@ h4,
 h5,
 h6,
 p {
+  margin: 0;
   font-size: inherit;
   font-weight: inherit;
 }
