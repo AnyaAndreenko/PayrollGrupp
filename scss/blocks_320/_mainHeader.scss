@@ -1,102 +1,87 @@
-@import '../base/reset';
-@import '../base/vars';
-@import '../base/fonts';
+@import "../base/reset";
+@import "../base/vars";
+@import "../base/fonts";
+@import "../base/mixins";
 
 .head {
-	background-color: $bg-color;
-	background-image: url('../../img/svg/bg-figur.svg');
-	background-repeat: no-repeat;
-	margin-bottom: 10px;
+  background-color: $bg-color;
+  background-image: url("../../img/svg/bg-figur.svg");
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
 }
 .left-main-slider {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .top-slider_item {
-	padding: 20px;
-	&_font {
-		color: $accent;
-		font-family: $font-main;
-		font-weight: 700;
-		font-size: 30px;
-	}
-	&_under {
-		margin-top: 10px;
-		color: $words;
-		font-family: $font-main;
-		font-weight: 400;
-		font-size: 13px;
-	}
+  padding: 20px;
+  &_font {
+    color: $accent;
+    font-family: $font-main;
+    font-weight: 700;
+    font-size: 30px;
+  }
+  &_under {
+    margin-top: 10px;
+    color: $words;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 13px;
+  }
 }
 //кнопка расчет стоимости
 .pay_btn {
-	margin: 20px;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background-color: $accent;
-	border-radius: 25px;
-	padding: 10px 15px 10px 15px;
-	box-shadow: 0px 7px 15px 0px rgba(76, 100, 188, 0.5);
+  @include main_button;
 }
 .pay_btn_text {
-	color: white;
-	font-family: $font-main;
-	font-weight: 700;
-	font-size: 14px;
+  color: white;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 14px;
 }
 // кнопка правильно расчитаем
 .add-pay1_btn {
-	margin-left: 6px;
-	display: flex;
-	flex: 1;
-	justify-content: left;
-	background-color: white;
-	border-radius: 10px;
-	padding: 10px 10px 10px 10px;
-	box-shadow: 2px 2px 4px rgba(99, 121, 201, 0.2);
-	width: 123px;
-	height: 50px;
+  @include three_button;
 }
 .for-icon_text {
-	color: $accent;
-	font-family: $font-accent;
-	font-weight: 400;
-	font-size: 13px;
+  color: $accent;
+  font-family: $font-accent;
+  font-weight: 400;
+  font-size: 13px;
 }
 // #calculator-svg_btn {
 //   margin-right: 2px;
 // }
 .add-pay2_btn {
-	margin-left: 6px;
-	display: flex;
-	flex: 1;
-	justify-content: left;
-	background-color: white;
-	border-radius: 10px;
-	padding: 10px 10px 10px 10px;
-	box-shadow: 2px 2px 4px rgba(99, 121, 201, 0.2);
-	width: 123px;
-	height: 50px;
+  margin-left: 6px;
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 4px rgba(99, 121, 201, 0.2);
+  width: 123px;
+  height: 50px;
 }
 
 .add-pay3_btn {
-	margin-right: 6px;
-	display: flex;
-	flex: 1;
-	justify-content: left;
-	background-color: white;
-	border-radius: 10px;
-	padding: 10px 10px 10px 10px;
-	box-shadow: 2px 2px 4px rgba(99, 121, 201, 0.2);
-	width: 100px;
-	height: 50px;
+  margin-right: 6px;
+  display: flex;
+  flex: 1;
+  justify-content: left;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 2px 2px 4px rgba(99, 121, 201, 0.2);
+  width: 100px;
+  height: 50px;
 }
 
 .add-pay {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 60px;
 }

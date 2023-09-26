@@ -1,0 +1,28 @@
+@import '../base/reset';
+@import '../base/vars';
+
+.calculator {
+	background-color: $bg-color;
+	border-image: url('../../img/svg/bg-calculator-figur.svg');
+	background-repeat: no-repeat;
+}
+.calculator_header {
+	.text-payroll {
+		padding: 10px;
+		&_main {
+			color: $accent;
+			font-family: $font-main;
+			font-weight: 600;
+			font-size: 30px;
+		}
+		&_under {
+			margin-top: 10px;
+			color: $header-color;
+			font-family: $font-main;
+			font-weight: 400;
+			font-size: 13px;
+		}
+	}
+}
+
+//карточка расчета стоимости услуг

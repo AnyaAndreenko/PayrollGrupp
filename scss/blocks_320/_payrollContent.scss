@@ -1,50 +1,87 @@
-@import '../base/reset';
-@import '../base/vars';
+@import "../base/reset";
+@import "../base/vars";
 
 .payroll {
-	margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .text-payroll {
-	padding: 10px;
-	&_main {
-		color: $accent;
-		font-family: $font-main;
-		font-weight: 600;
-		font-size: 30px;
-	}
-	&_under {
-		margin-top: 10px;
-		color: $header-color;
-		font-family: $font-main;
-		font-weight: 400;
-		font-size: 13px;
-	}
+  padding: 10px;
+  &_main {
+    color: $accent;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  &_under {
+    margin-top: 10px;
+    color: $header-color;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 13px;
+  }
 }
 // список услуг
 .includ {
-	margin-top: 10px;
-	margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 .includ_text {
-	margin-top: 10px;
-	color: $header-color;
-	font-family: $font-main;
-	font-weight: 400;
-	font-size: 13px;
+  margin-top: 10px;
+  color: $header-color;
+  font-family: $font-main;
+  font-weight: 400;
+  font-size: 13px;
 
-	&_num {
-		color: rgba(99, 121, 201, 0.4);
-		font-family: $font-main;
-		font-size: 24px;
-		font-weight: 700;
-	}
+  &_num {
+    color: rgba(99, 121, 201, 0.4);
+    font-family: $font-main;
+    font-size: 24px;
+    font-weight: 700;
+  }
 }
 ol li {
-	list-style-type: none;
-	padding-left: 15px;
-	text-align: left;
-	margin: 20px 20px 20px 20px;
-	::before {
-		content: none;
-	}
+  list-style-type: none;
+  padding-left: 15px;
+  text-align: left;
+  margin: 20px 20px 20px 20px;
+  ::before {
+    content: none;
+  }
+}
+
+//Отчеты 4шт
+.reports_PFR,
+.reports_FNC,
+.reports_RusF,
+.reports_FSS {
+  background-color: $bg-color;
+  font-family: $font-accent;
+  padding: 20px;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  flex: 1;
+
+  //заголовок
+  //   &_reports_main {
+  //     font-weight: 700;
+  //     font-size: 13px;
+  //     color: $accent;
+  //   }
+  //   &_reports_under {
+  //     font-weight: 400;
+  //     font-size: 14px;
+  //     color: $header-color;
+  //   }
+}
+
+.reports_main {
+  font-weight: 700;
+  font-size: 13px;
+  color: $accent;
+}
+.reports_under {
+  font-weight: 400;
+  font-size: 14px;
+  color: $header-color;
 }

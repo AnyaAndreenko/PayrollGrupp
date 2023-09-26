@@ -1,25 +1,27 @@
 //base
-@import './base/reset';
-@import './base/vars';
-@import './base/fonts';
+@import "./base/reset";
+@import "./base/vars";
+//import "./base/fonts";
+@import "./base/mixins";
 
 //blocks 320
-@import './blocks_320/header';
-@import './blocks_320/mainHeader';
-@import './blocks_320/content';
-@import './blocks_320/payrollContent';
+@import "./blocks_320/header";
+@import "./blocks_320/mainHeader";
+@import "./blocks_320/content";
+@import "./blocks_320/payrollContent";
+@import "./blocks_320/calculator";
 
 //blocks 640
-@import './blocks_640/header';
+@import "./blocks_640/header";
 
 //blocks 768
-@import './blocks_768/header';
+@import "./blocks_768/header";
 
 //blocks 1024
-@import './blocks_1024/header';
+@import "./blocks_1024/header";
 
 //blocks 1440
-@import './blocks_1440/header';
+@import "./blocks_1440/header";
 
 //blocks begin до 320
-@import './blocks_begin/header';
+@import "./blocks_begin/header";
