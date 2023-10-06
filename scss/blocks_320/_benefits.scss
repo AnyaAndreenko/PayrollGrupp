@@ -1,0 +1,103 @@
+@import "../base/reset";
+@import "../base/vars";
+@import "../base/mixins";
+
+.benefits {
+  background-color: white;
+  margin-top: 30px;
+}
+.benefits_main {
+  padding: 20px;
+  color: $accent;
+  font-family: $font-main;
+  font-weight: 600;
+  font-size: clamp(13px, 3vw, 28px);
+}
+
+//оформление
+.benefits_explan_support,
+.benefits_explan_client,
+.benefits_explan_control,
+.benefits_explan_balence,
+.benefits_explan_bill,
+.benefits_explan_com {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  border: none;
+  &_icon {
+    display: flex;
+    align-items: flex-start;
+    margin-right: 20px;
+    margin-bottom: auto;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+  }
+}
+// .benefits_explan_support svg {
+//   width: 100%;
+//   height: 100%;
+// }
+//
+.benefits_explan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  //заголовок
+  &_main {
+    color: rgba(62, 72, 106, 1);
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: clamp(10px, 3vw, 24px);
+    margin-bottom: 10px;
+  }
+  //подтекст
+  &_under {
+    color: rgba(120, 131, 171, 1);
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: clamp(6px, 3vw, 18px);
+    margin-top: 10px;
+  }
+}
+//карточка "Гостевой доступ к ПО"
+.benefits_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+  background-color: $bg-color;
+  background-image: url("../../img/svg/bg-benefit.svg");
+  background: no-repeat;
+  padding: 20px;
+  width: 300px;
+
+  &_main {
+    color: $accent;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 20px;
+    //font-size: clamp(10px, 3vw, 24px);
+    margin-bottom: 10px;
+  }
+  //подтекст
+  &_under {
+    color: $header-color;
+    font-family: $font-main;
+    font-weight: 300;
+    font-size: 15px;
+    //font-size: clamp(6px, 3vw, 18px);
+    margin-top: 10px;
+    align-items: center;
+  }
+}
+//оставить заявку
+.benefits_card_btn {
+  @include application_button;
+}
+.benefits_card_btn_text {
+  @include text_in_button;
+}

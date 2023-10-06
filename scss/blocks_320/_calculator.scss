@@ -1,28 +1,79 @@
-@import '../base/reset';
-@import '../base/vars';
-
+@import "../base/reset";
+@import "../base/vars";
+@import "../base/mixins";
+// главное
 .calculator {
-	background-color: $bg-color;
-	border-image: url('../../img/svg/bg-calculator-figur.svg');
-	background-repeat: no-repeat;
-}
-.calculator_header {
-	.text-payroll {
-		padding: 10px;
-		&_main {
-			color: $accent;
-			font-family: $font-main;
-			font-weight: 600;
-			font-size: 30px;
-		}
-		&_under {
-			margin-top: 10px;
-			color: $header-color;
-			font-family: $font-main;
-			font-weight: 400;
-			font-size: 13px;
-		}
-	}
+  background-color: $bg-color;
+  border-image: url("../../img/svg/bg-calculator-figur.svg");
+  background-repeat: no-repeat;
+
+  &_header {
+    padding: 10px;
+    color: $accent;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  &_list {
+    margin-top: 10px;
+    color: $header-color;
+    font-family: $font-main;
+    font-weight: 400;
+    font-size: 13px;
+  }
+  &_under {
+    margin-top: 10px;
+    color: $words;
+    font-family: $font-main;
+    font-weight: 300;
+    font-size: 12px;
+    padding: 10px;
+  }
 }
 
 //карточка расчета стоимости услуг
+.calculator_card {
+  width: 320px;
+  margin-bottom: 10px;
+  background-color: white;
+  font-family: $font-accent;
+  padding: 20px;
+  align-items: center;
+  justify-content: left;
+  display: flex;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: rgba(99, 121, 201, 0.2);
+
+  //Стоимость услуги:
+  &_main_text_up_main {
+    margin-top: 10px;
+    color: $header-color;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  &_main_text_up_under {
+    //margin-top: 10px;
+    color: $header-color;
+    font-family: $font-main;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 10px;
+  }
+}
+.words_under {
+  margin-top: 10px;
+  color: $words;
+  font-family: $font-main;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 10px;
+}
+//оставить заявку
+.calculator_card_btn {
+  @include application_button;
+}
+.calculator_card_btn_text {
+  @include text_in_button;
+}

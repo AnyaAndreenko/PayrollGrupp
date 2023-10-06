@@ -1,2 +1,95 @@
+@import "../base/reset";
 @import "../base/vars";
 @import "../base/mixins";
+
+// сам блок футера
+.footer {
+  margin-top: 10px;
+  align-items: center;
+}
+//лого компании
+
+.logo {
+  align-items: center;
+}
+//год
+.year {
+  justify-content: center;
+  text-align: center;
+  color: $words;
+  font-family: $font-main;
+  font-size: 13px;
+  font-weight: 400;
+}
+#symbol_c {
+  margin: 5px;
+  vertical-align: middle;
+}
+//название компании
+.name {
+  justify-content: center;
+  text-align: center;
+  color: $words;
+  font-family: $font-main;
+  font-size: 13px;
+  font-weight: 400;
+}
+//телефон
+.telephone {
+  justify-content: center;
+  text-align: center;
+  &_name {
+    color: $header-color;
+    font-family: $font-accent;
+    font-size: 13px;
+    font-weight: 600;
+	display: inline-block;
+    vertical-align: middle;
+  }
+}
+//почта
+.email {
+  justify-content: center;
+  align-items: center;
+  &_name {
+    color: $header-color;
+    font-family: $font-accent;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+// 3 соцсети
+.social_networks {
+  justify-content: center;
+  align-items: center;
+}
+// 8позиций
+.footer_nav {
+  color: $header-color;
+  font-family: $font-accent;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+// //margin-left: 6px;
+// display: flex;
+// flex: 1;
+// justify-content: left;
+// background-color: white;
+// border-radius: 10px;
+// padding: 10px 10px 10px 10px;
+// box-shadow: 2px 2px 4px rgba(99, 121, 201, 0.2);
+// width: 123px;
+// height: 50px;
+.social_networks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

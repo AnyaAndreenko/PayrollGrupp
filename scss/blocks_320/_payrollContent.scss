@@ -1,5 +1,6 @@
 @import "../base/reset";
 @import "../base/vars";
+@import "../base/mixins";
 
 .payroll {
   margin-bottom: 10px;
@@ -50,38 +51,55 @@ ol li {
 }
 
 //Отчеты 4шт
+.reports {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+
+  align-items: center;
+}
 .reports_PFR,
 .reports_FNC,
 .reports_RusF,
 .reports_FSS {
+  width: 320px;
+  height: 70px;
+  margin-bottom: 10px;
   background-color: $bg-color;
   font-family: $font-accent;
   padding: 20px;
   align-items: center;
   justify-content: left;
   display: flex;
-  flex: 1;
-
-  //заголовок
-  //   &_reports_main {
-  //     font-weight: 700;
-  //     font-size: 13px;
-  //     color: $accent;
-  //   }
-  //   &_reports_under {
-  //     font-weight: 400;
-  //     font-size: 14px;
-  //     color: $header-color;
-  //   }
+  border-radius: 10px;
+  position: relative;
+  //flex: 1;
 }
 
 .reports_main {
+  margin: 0;
+  top: 5px;
+  left: 10px;
   font-weight: 700;
   font-size: 13px;
   color: $accent;
+  position: absolute;
 }
 .reports_under {
+  margin: 0;
+  bottom: 10px;
+  left: 10px;
   font-weight: 400;
   font-size: 14px;
   color: $header-color;
+  position: absolute;
+}
+.reports_img {
+  float: right;
+  margin-left: 5px;
+  top: 5px;
+  right: 10px;
+  position: absolute;
 }
